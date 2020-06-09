@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity"
+      layout:decorator="template">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une Réclamation</title>
+</head>
+<body>
+<div layout:fragment="content">
+<br>
+
+    <div class=" container row col justify-content-md-center" sec:authorize="hasAuthority('USER')">
+        <div class="col-md-auto ">
+            <h2>Ajouter une réclamation</h2>
+            <h5>Saisissez Les informations de Plaignant.</h5>
+            <br>
+            <form th:action="@{/addPerson}"  method="post" >
+                <div class="form-group">
+                    <select class="form-control" id="civility" th:field="*{p.civility}" required>
+                        <option th:value="M">Mr</option>
+                        <option th:value="F">Mme</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="firstName" placeholder="Prénom" name="firstName" th:field="${p.firstName}" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lastName" placeholder="Nom" name="lastName" th:field="${p.lastName}" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="cin" placeholder="CIN" name="cin" th:field="${p.cin}" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" th:field="${p.email}" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="adress" placeholder="Adress" name="adress" th:field="${p.address}" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="06XXXXXXXX" pattern="06[0-9]{8}" th:field="${p.phone}" required>
+                </div>
+               <br>
+                <button type="submit" class="btn-lg btn-block btn btn-primary">Continuer</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity"
+      layout:decorator="template">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualiser les utilisateurs</title>
+    <script type="text/javascript" th:src="@{js/main.js}" src="../static/js/main.js"></script>
+    <link type="text/css" href="css/main.css">
+
+</head>
+<body>
+<div layout:fragment="content">
+    <br> <br>
+    <div class="container col-10">
+
+        <div class="row">
+            <button  type="button"  class="btn btn-success ml-auto nBtn">Ajouter un Utilisateur</button>
+        </div>
+        <br>
+        <div class="card">
+
+            <div class="card-block">
+                <table class="table table-hover">
+                    <thead>
+                <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Email</th>
+                </tr>
+                </thead>
+                    <tbody>
+                    <tr th:each="user: ${Users}">
+                        <td scope="row" th:text="${user.getUserName()}" ></td>
+                        <td scope="row" th:text="${user.getFirstName()}"></td>
+                        <td scope="row" th:text="${user.getLastName()}"></td>
+                        <td scope="row" th:text="${user.getEmail()}"></td>
+                        <td> <a th:href="@{/getUser/(id=${user.getId()})}" class="btn btn-primary eBtn"> Modifier </a></td> <!--  " for editing-->
+                        <td> <a th:href="@{/deleteUser/{id}(id=${user.getId()})}" class="btn btn-danger delBtn"> Supprimer </a></td> <!-- th:href="@{../(id=${..}) " for deleting-->
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="myForm">
+
+            <form th:action="@{/addUser}"  method="POST"  th:object="${user}"> <!-- with th:action="@{/..}" method="post" -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Créer un utilisateur</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="form-group">
+                                    <label for="usernamee">Username :</label>
+                                    <input type="text" class="form-control" id="usernamee" placeholder="Ecrivez le username" name="username" th:field="*{userName}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="emaill">Email :</label>
+                                    <input type="email" class="form-control" id="emaill" placeholder="Ecrivez l'email" name="email" th:field="*{email}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Firstnamee">Prénom :</label>
+                                    <input type="text" class="form-control" id="Firstnamee" placeholder="Ecrivez  prénom" name="Firstname" th:field="*{firstName}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Lastnamee">Nom :</label>
+                                    <input type="text" class="form-control" id="Lastnamee" placeholder="Ecrivez le Nom" name="Lastname" th:field="*{lastName}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pwdd">Password :</label>
+                                    <input type="password" class="form-control" id="pwdd" placeholder="Ecrivez le mot de passe" name="password" th:field="*{password}" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                <input type="submit" class="btn btn-primary" value="Créer"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="myFormEdit">
+
+            <form th:action="@{/editUser}"  method="POST"  th:object="${user}"> <!-- with th:action="@{/..}" method="post" -->
+                <div class="modal fade" id="editting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="editingLabel">Modifier un utilisateur</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="form-group">
+                                    <input type="hidden" class="form-control" id="id"  th:field="*{id}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username">Username :</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" th:field="*{userName}" disabled th:disabled="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email :</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" th:field="*{email}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Firstname">Pénom :</label>
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Enter First name" name="Firstname" th:field="*{firstName}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Lastname">Nom :</label>
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Enter Last name" name="Lastname" th:field="*{lastName}" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pwd">Password :</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" th:field="*{password}" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                <input type="submit" class="btn btn-primary" value="Modifier"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalTitle">Supprimer un Utilisateur !</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="alert alert-danger"> Voulez-vous supprimer cet utilisateur ? </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <a href="" class="btn btn-danger" id="delRef">Confirmer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
