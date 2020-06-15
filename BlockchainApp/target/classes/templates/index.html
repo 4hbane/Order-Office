@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity"
+      layout:decorator="template">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" >
+</head>
+<body>
+<br>
+
+<div layout:fragment="content">
+
+    <div class="container-full-bg jumbotron" style="margin-bottom: 0px;" >
+        <!-- ********************* Index a visitor ********************* -->
+                        <div class="container" >
+                            <div class="row justify-content-md-center">
+
+                                    <div>
+                                                <div class="text-center" >
+                                                        <h1>Bienvenue dans Site Bureau d'odre</h1>
+                                                        <br/>
+                                                        <h4>Description de l'application</h4>
+
+                                                        <div class="container">
+                                                                <div class="row justify-content-md-center ">
+                                                                            <div class="description">
+                                                                                        <p style="margin: 0px 100px;"> L'application offre des services de gestion d'un bureau d'ordre et la sécurisation par les concepts blockchain:
+                                                                                    La gestion des réclamations et leurs ordres se font par Des algorithmes de Hash pour protèger les données stockés.
+                                                                                     </p>
+                                                                            </div>
+                                                                    <br>
+                                                                    <br>
+                                                                        <img class="thumbnail img-responsive" src="images/schema.jpg" />
+                                                                </div>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                </div>
+                                    </div>
+                                    <br>
+                                    <h4>Principes de fonctionnement </h4>
+                                    <div  class="container">
+                                            <div class="row justify-content-md-center ">
+                                                <br>
+                                                <div class="w-25 p-3 cardDiv">
+                                                    <br>
+                                                    <h6 class="text-center">Admins peuvent :</h6>
+                                                    <br>
+                                                    <ul >
+                                                        <li class="text-left">
+                                                            Ajouter des utilisateurs ou des inspecteurs.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Voir les réclamations enregistrées.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Voir la traçabilités de tous les actions.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <br>
+                                                <div class="w-25 p-3 cardDiv">
+                                                    <br>
+                                                    <h6 class="text-center">Utilisateurs peuvent :</h6>
+                                                    <br>
+                                                    <ul >
+                                                        <li class="text-left">
+                                                            Ajouter des réclamations.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Voir les réclamations enregistrées.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Voir son profile et modifier son mot de passe.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <br>
+                                                <div class="w-25 p-3 cardDiv">
+                                                    <br>
+                                                    <h6 class="text-center">Inpsecteurs peuvent :</h6>
+                                                    <br>
+                                                    <ul>
+                                                        <li class="text-left">
+                                                            Voir les réclamations enregistrées.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Voir son profile et modifier son mot de passe.
+                                                        </li>
+                                                        <li class="text-left">
+                                                            Signaler un problème à l'Admin.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- ********************* Index of Admin ***********************
+                        <div class="jumbotron" style="margin-bottom: 0px;" sec:authorize="hasAuthority('ADMIN')">
+                            <div class="text-center">
+                                <h4>Instructions for Admin</h4>
+                                <p>  non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.elementum velit. Nunc tincidunt diam a.</p> <br>
+
+                                <p>ndimentum eu posuere at. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+
+                            </div>
+                        </div> -->
+                    <!-- ********************* Index a User ***********************
+                        <div class="jumbotron" style="margin-bottom: 0px;" sec:authorize="hasAuthority('USER')">
+                            <div class="text-center" >
+                                <br>
+                                <br>
+                                <h4>Instructions for USERs</h4>
+                                <p>Duis quam libero, elementum etDuis quam libero, elementum etDuis quam libero, elementum et  non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.elementum velit. Nunc tincidunt diam a.</p> <br>
+
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+
+                                <p>Duis quam libero, elementum et ndimentum eu posuere at. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Duis quam libero, elementum et. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+                            </div>
+                        </div>  -->
+                    <!-- ********************* Index a INSPECTOR ***********************
+                        <div class="jumbotron" style="margin-bottom: 0px;" sec:authorize="hasAuthority('INSPECTOR')">
+                            <div class=" text-center">
+                                <br>
+                                <br>
+                                <h4>Instructions for INSPECTORs</h4>
+                                <p>Duis quam libero, elementum etDuis quam libero, elementum etDuis quam libero, elementum et  non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.elementum velit. Nunc tincidunt diam a.</p> <br>
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+
+                                <p>Aenean dignissim tincidunt purus nec vehicula. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+                                <p>Duis quam libero, elementum et ndimentum eu posuere at. Proin lorem sapien, condimentum eu posuere at, accumsan non ipsum. Aenean sagittis est vel neque volutpat luctus. Duis quam libero, elementum et sem nec, pulvinar elementum velit. Nunc tincidunt diam ac urna venenatis, quis ultrices arcu fringilla. Proin nulla ipsum, consectetur eget ex vel, accumsan ultricies urna. Cras lobortis mauris quis massa dictum, consectetur interdum dui pellentesque. Morbi a lorem tortor. Nulla rutrum diam in lorem dictum porttitor non quis arcu. Fusce pharetra ipsum a ullamcorper tincidunt. Duis quam libero, elementum et. Fusce eleifend lectus eu porta iaculis. Nulla dui sapien, vulputate ac nunc nec, placerat vulputate turpis. Proin porta, turpis at condimentum accumsan, metus dui varius nulla, non ultricies purus ligula luctus neque. Mauris a venenatis massa, eget tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> <br>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+    </div>
+</div>
+</body>
+</html>
