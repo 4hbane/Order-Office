@@ -25,7 +25,7 @@ public class Block {
     @NotNull
     private final String prevBlockHash;
     @NotNull
-    private long time;
+    private long date;
     @Lob
     @NotNull
     private Reclamation data;
@@ -35,15 +35,15 @@ public class Block {
     public Block() {
         prevBlockHash = Sha256Hash.ZERO_HASH.toString();
         hash = Sha256Hash.ZERO_HASH.toString();
-        time = new Date().getTime();
-        data = new Reclamation("Genesis Block");
+        date = new Date().getTime();
+        data = new Reclamation("Genesis Block".getBytes());
         calculateHash();
     }
 
     public Block(Reclamation data, String prevBlockHash) {
         this.prevBlockHash = prevBlockHash;
         this.data = data;
-        time = new Date().getTime();
+        date = new Date().getTime();
         hash = calculateHash();
     }
 
@@ -52,7 +52,7 @@ public class Block {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             stream.write(prevBlockHash.getBytes());
             stream.write(Sha256Hash.hash(data.toString ().getBytes())); // I changed data.getReclamation().getBytes() to that !
-            uint32ToByteStream(stream, time);
+            uint32ToByteStream(stream, date);
             return Sha256Hash.wrap(Sha256Hash.hash(stream.toByteArray())).toString();
         } catch (IOException e) {
             throw new RuntimeException(e); // Cannot happen.

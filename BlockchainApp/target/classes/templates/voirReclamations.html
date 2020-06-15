@@ -31,8 +31,11 @@
                         <td th:text="${block.getId()}"></td>
                         <td th:text="${block.getData().getComplainer().getLastName()} +'  '+ ${block.getData().getComplainer().getFirstName()}"></td>
                         <td th:text="${block.getData().getComplainee().getLastName()} +'  '+ ${block.getData().getComplainee().getFirstName()}"></td>
-                        <td th:text="${block.getData().getDate()}"></td>
-                        <td> <a th:href="@{/reclamation/{id}(id=${block.getId()})}" class="btn btn-info rBtn"> Détail </a></td>
+                        <td th:text="${block.getData().getTime()}"></td>
+                        <td>
+                            <a th:href="@{/reclamation/{id}(id=${block.getId()})}" class="btn btn-info rBtn"> Détail </a>
+                            <a th:href="@{/reclamationfile/{id}(id=${block.getId()})}" class="btn btn-primary">Télécharger</a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

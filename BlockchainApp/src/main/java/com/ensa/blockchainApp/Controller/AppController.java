@@ -2,10 +2,12 @@ package com.ensa.blockchainApp.Controller;
 
 import com.ensa.blockchainApp.Business.Person;
 import com.ensa.blockchainApp.Business.User;
+import com.ensa.blockchainApp.Core.Block;
 import com.ensa.blockchainApp.Repositories.BlockRepository;
 import com.ensa.blockchainApp.Repositories.TracabilityRepository;
 import org.apache.tomcat.util.http.parser.Authorization;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -14,6 +16,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Controller // Spring MVC
@@ -71,8 +76,12 @@ class AppController{
 
 	@GetMapping("/voirReclamations")
 	public String voirReclamations(Model model){
-
-		model.addAttribute ( "Blocks", blockRepository.findAllByDateDesc () );
+		ArrayList<Block> l = (ArrayList<Block>) blockRepository.findAllByDateDesc();
+		if(l.size()>1) {
+			model.addAttribute("Blocks", l.subList(0, l.size() - 1));
+		} else {
+			return "index";
+		}
 		return "voirReclamations";
 	}
 

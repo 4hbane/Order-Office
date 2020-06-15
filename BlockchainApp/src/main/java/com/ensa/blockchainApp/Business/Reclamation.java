@@ -1,10 +1,10 @@
 package com.ensa.blockchainApp.Business;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
@@ -22,21 +22,23 @@ public class Reclamation implements Serializable {
     private Respondent complainee;
     @NotNull
     private String object;
-    @NotNull
-    private String reclamation;
+
+    @Lob
+    private byte[] reclamation;
 
     @Temporal ( TemporalType.DATE )
-    private Date date;
+    private Date time;
 
-    public Reclamation(String rec) {
+    // TODO(): Need to change rec to take bytes.
+    public Reclamation(byte[] rec) {
         this.reclamation = rec;
-    } // TODO(): Should be removed later for testing.
-    public Reclamation(Person complainer, Respondent complainee, String object, String reclamation, Date date) {
+    }
+    public Reclamation(Person complainer, Respondent complainee, String object, byte[] reclamation, Date date) {
         this.complainer = complainer;
         this.complainee = complainee;
         this.object = object;
         this.reclamation = reclamation;
-        this.date = new Date();
+        this.time = new Date();
     }
 
 }

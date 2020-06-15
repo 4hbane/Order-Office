@@ -1,0 +1,17 @@
+com/ensa/blockchainApp/KeyCloak/keycloakSpringSecurityConfig.class
+com/ensa/blockchainApp/Controller/UsersManagementController.class
+com/ensa/blockchainApp/Controller/AppController.class
+com/ensa/blockchainApp/Business/Person.class
+com/ensa/blockchainApp/Controller/ReclamationManagementController.class
+com/ensa/blockchainApp/BlockchainAppApplication.class
+com/ensa/blockchainApp/Repositories/BlockRepository.class
+com/ensa/blockchainApp/Core/Block.class
+com/ensa/blockchainApp/Business/Respondent.class
+com/ensa/blockchainApp/Business/Traceability.class
+com/ensa/blockchainApp/Business/Reclamation.class
+com/ensa/blockchainApp/Core/Sha256Hash.class
+com/ensa/blockchainApp/Business/User.class
+com/ensa/blockchainApp/Repositories/TracabilityRepository.class
+com/ensa/blockchainApp/Controller/SecurityController.class
+com/ensa/blockchainApp/KeyCloak/KeyloackConfig.class
+com/ensa/blockchainApp/KeyCloak/keyCloakUser.class

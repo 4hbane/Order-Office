@@ -14,7 +14,7 @@
         <div class="col-md-auto ">
             <h2>La suite pour ajouter une réclamation</h2>
             <br>
-            <form th:action="@{/saveReclamation}"  method="post">
+            <form th:action="@{/saveReclamation}" id="singleUploadForm" method="post" enctype="multipart/form-data">
                 <div th:object="${respondent}">
                     <div class="form-group">
                         <h5>Saisissez les infos de Destinataire.</h5>
@@ -37,7 +37,7 @@
                         <input type="text" class="form-control" id="objet" placeholder="Objet de réclamation" name="objet" th:field="*{object}" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="url" placeholder="url de PDF" name="url" th:field="*{reclamation}" required>
+                        <input type="file" class="form-control" placeholder="url de PDF" name="file" id="singleFileUploadInput" required>
                     </div>
 
                 </div>
@@ -50,4 +50,23 @@
 </div>
 
 </body>
+
+<script>
+    var singleUploadForm = document.querySelector('#singleUploadForm');
+    var singleFileUploadInput = document.querySelector('#singleFileUploadInput');
+
+    function uploadSingleFile(file) {
+        var formData = new FormData();
+        formData.append("file", file);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/uploadFile");
+        xhr.send(formData);
+    }
+    singleUploadForm.addEventListener('submit', function(event){
+        var files = singleFileUploadInput.files;
+        uploadSingleFile(files[0]);
+        event.preventDefault();
+    }, true);
+
+</script>
 </html>

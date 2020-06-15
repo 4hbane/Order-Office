@@ -9,11 +9,18 @@ import com.ensa.blockchainApp.Core.Block;
 import com.ensa.blockchainApp.Repositories.BlockRepository;
 import com.ensa.blockchainApp.Repositories.TracabilityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.Date;
 
 @Controller
@@ -39,26 +46,18 @@ public class ReclamationManagementController {
     }
 
     @PostMapping("/saveReclamation")
-    public String addReclamation( @ModelAttribute Respondent respondent, @ModelAttribute Reclamation reclamation){
+    public String addReclamation(@ModelAttribute Respondent respondent, @ModelAttribute Reclamation reclamation, @RequestParam("file") MultipartFile file) throws IOException {
 
-        Reclamation newReclamation = new Reclamation (this.person, respondent, reclamation.getObject (), reclamation.getReclamation (), new Date (  )  );
-
+        Reclamation newReclamation = new Reclamation (this.person, respondent, reclamation.getObject (), file.getBytes(), new Date (  )  );
         if ( blockRepository.count () == 0) {
-            Block b = new Block ( );
-            b.setData ( newReclamation );
-
-            System.out.println (b.getData ());
-
-            Block newblock = blockRepository.save ( b );
-            tracabilityRepository.save ( new Traceability ( newblock.getId (), this.connectedUser, new Date (  )));
+            Block newBlock = blockRepository.save ( new Block() );
+            //tracabilityRepository.save ( new Traceability ( newblock.getId (), this.connectedUser, new Date (  )));
         }
 
-        else{
-            Block b = new Block ( newReclamation, blockRepository.findById ( blockRepository.count ()  ).get ().getHash () );
-            Block newblock = blockRepository.save ( b );
-            System.out.println (b.getData ());
-            tracabilityRepository.save (new Traceability ( newblock.getId (), this.connectedUser, new Date (  ) ));
-        }
+        Block b = new Block ( newReclamation, blockRepository.findById ( blockRepository.count ()  ).get ().getHash () );
+        Block newblock = blockRepository.save ( b );
+        System.out.println (b.getData ());
+        tracabilityRepository.save (new Traceability ( newblock.getId (), this.connectedUser, new Date (  ) ));
 
         return "redirect:/";
     }
@@ -72,5 +71,15 @@ public class ReclamationManagementController {
         return null;
     }
 
+    @GetMapping("/reclamationfile/{id}")
+    @ResponseBody
+    public ResponseEntity<Resource> downloadReclamationFile(@PathVariable(name = "id") Long id) {
+        // Load file from database
+        Reclamation r = blockRepository.findById(id).get().getData();
+        byte[] file =  r.getReclamation();
+        return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + r.getObject() + ".pdf\"")
+                .body(new ByteArrayResource(file));
+    }
 
 }
