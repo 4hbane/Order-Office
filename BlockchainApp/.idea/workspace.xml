@@ -20,40 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc18dc9-adc7-49c9-96ea-853d40c70fdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddcc97f3-9a2b-400e-b1a3-155c9fbd0b35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddcc97f3-9a2b-400e-b1a3-155c9fbd0b35/storage_v2/_src_/schema/accounts.5rudgA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddcc97f3-9a2b-400e-b1a3-155c9fbd0b35/storage_v2/_src_/schema/blockchain.VOLhTA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddcc97f3-9a2b-400e-b1a3-155c9fbd0b35/storage_v2/_src_/schema/bloks.jcWXBQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddcc97f3-9a2b-400e-b1a3-155c9fbd0b35/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Repositories/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Repositories/BlockRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addReclamationRespondent.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addReclamationRespondent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signaler.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signaler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/addReclamationRespondent.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addReclamationRespondent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/signaler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/signaler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,10 +92,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -85,16 +104,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\templates" />
-      <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\static\images" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ensa.blockchainApp.Repositories" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\static\images" />
       <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ensa.blockchainApp.Controller" />
+      <recent name="com.ensa.blockchainApp.Repositories" />
+      <recent name="com.ensa.blockchainApp.Business" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ABDELLAHAHBANE\Desktop\PJ\BlockchainApp\src\main\resources\templates" />
+      <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\templates" />
+      <recent name="C:\Users\ABDELLAHAHBANE\Desktop\Blockchain-App- Mine\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -112,6 +134,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@f4d02a" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -132,28 +176,32 @@
       <workItem from="1592180790112" duration="504000" />
       <workItem from="1592217286056" duration="357000" />
       <workItem from="1592217998668" duration="8946000" />
+      <workItem from="1592260931778" duration="672000" />
+      <workItem from="1592332148655" duration="9739000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="338" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592217304699">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592261156185">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1589769689739" />
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1592261156185" />
     <state x="338" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1592217304699" />
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1589769365966">
       <screen x="0" y="0" width="1536" height="864" />
@@ -171,59 +219,63 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="100" y="123" width="1240" height="630" key="DiffContextDialog/0.23.1440.830@0.23.1440.830" timestamp="1592223310293" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1592227843516">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center" timestamp="1592227843515">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.0.center" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left" timestamp="1592227843515">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.0.left" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right" timestamp="1592227843516">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.0.right" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1398" height="271" key="GridCell.Tab.1.bottom" timestamp="1592227843518">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843518" />
-    <state width="1398" height="271" key="GridCell.Tab.1.center" timestamp="1592227843517">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.1.center" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1398" height="271" key="GridCell.Tab.1.left" timestamp="1592227843517">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.1.left" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1398" height="271" key="GridCell.Tab.1.right" timestamp="1592227843517">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state width="1493" height="227" key="GridCell.Tab.1.right" timestamp="1592342312998">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="241" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1592181296820" />
+    <state width="1493" height="227" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
     <state width="1398" height="271" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
     <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1590412723920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1590412723920" />
+    <state width="529" height="446" key="SwitcherDM" timestamp="1592334520686">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="529" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1592334520686" />
     <state x="572" y="310" width="346" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1592227595846">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="610" y="299" width="322" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1589769757275" />
     <state x="572" y="310" width="346" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.830@0.23.1440.830" timestamp="1592227595846" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1592180837002">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1592332147639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592180837002" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592332147639" />
     <state x="398" y="212" width="670" height="675" key="run.anything.popup" timestamp="1592222037639">
       <screen x="0" y="23" width="1440" height="830" />
     </state>

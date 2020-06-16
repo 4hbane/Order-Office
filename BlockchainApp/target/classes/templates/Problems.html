@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity"
+      layout:decorator="template">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualiser Les problèmes Signalés</title>
+    <script type="text/javascript" th:src="@{js/main.js}" src="../static/js/main.js"></script>
+</head>
+<body>
+<div layout:fragment="content">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Les problèmes Signalés par Inspecteurs</h3>
+                <br>
+                <table class="table">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Ajouté par</th>
+                        <th scope="col">Date de l'ajout</th>
+                        <th scope="col">Object</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="problem: ${Problems}">
+                        <th th:text="${problem.getUserName()}"></th>
+                        <td th:text="${problem.getDate()}"></td>
+                        <td th:text="${problem.getObject()}"></td>
+                        <td> <a th:href="@{/problem/{id}(id=${problem.getId()})}" class="btn btn-info pBtn"> Détail </a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="problem_detail">
+
+            <div class="modal fade" id="prb_detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="traLabel">Les infos sur le problème signalé  :</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                           <br/>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="PorblemId" readonly >
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="dateProblem" readonly >
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="objectProblem" readonly >
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="usernameProblem" readonly >
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" id="messageProblem" readonly ></textarea>
+                                    </div>
+
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+
+                     </div>
+                 </div>
+              </div>
+            </div>
+    </div>
+
+</div>
+</body>
+</html>

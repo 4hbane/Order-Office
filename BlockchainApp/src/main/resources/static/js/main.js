@@ -62,6 +62,47 @@ $(document).ready(function () {
         $('.Tracabilite_Detail #tr_detail').modal()
 
     });
+
+
+    //Modal for showing Reported Problems !
+    $('.table .pBtn').on('click', function (event) {
+
+        event.preventDefault();
+        let href = $(this).attr('href');
+        $.get(href, function (Problem, status) {
+
+            $('.problem_detail #PorblemId ').val(Problem.id); // set the id field
+            $('.problem_detail #dateProblem ').val(Problem.date);
+            $('.problem_detail #objectProblem ').val(Problem.object);
+            $('.problem_detail #usernameProblem ').val(Problem.userName);
+            $('.problem_detail #messageProblem ').val(Problem.message);
+        })
+
+        $('.problem_detail #prb_detail').modal()
+
+    });
+
+
+    //Modal for showing contactMessages !
+    $('.table .cBtn').on('click', function (event) {
+
+        event.preventDefault();
+        let href = $(this).attr('href');
+        $.get(href, function (Contact, status) {
+
+            $('.contactMessage_detail #contactId ').val(Contact.id); // set the id field
+            $('.contactMessage_detail #contactDate ').val(Contact.date);
+            $('.contactMessage_detail #contactObject ').val(Contact.object);
+            $('.contactMessage_detail #contactfirstName ').val(Contact.firstName);
+            $('.contactMessage_detail #contactlastName ').val(Contact.lastName);
+            $('.contactMessage_detail #contactEmail ').val(Contact.email);
+            $('.contactMessage_detail #contactMessage ').val(Contact.message);
+
+        })
+
+        $('.contactMessage_detail #contact_detail').modal()
+
+    });
 });
 
 

@@ -16,26 +16,26 @@
         <div class="col-md justify-content-md-center">
 
             <div>
-                <form action="">
+                <form th:action="@{/addContactMessage}" method="post" enctype="multipart/form-data" th:object="${contactMessage}">
                     <div class="form-group">
                         <label for="nom">Votre Nom :</label>
-                        <input type="text" class="form-control" id="nom" placeholder="Entrer votre nom" name="nom">
+                        <input type="text" class="form-control" id="nom" placeholder="Entrer votre nom" name="nom" th:field="*{firstName}">
                     </div>
                     <div class="form-group">
                         <label for="prenom">Votre Prenom :</label>
-                        <input type="text" class="form-control" id="prenom" placeholder="Entrer votre prenom" name="prenom">
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrer votre prenom" name="prenom" th:field="*{lastName}">
                     </div>
                     <div class="form-group">
                         <label for="email">Votre email :</label>
-                        <input type="text" class="form-control" id="email" placeholder="Entrer votre email" name="email">
+                        <input type="text" class="form-control" id="email" placeholder="Entrer votre email" name="email" th:field="*{email}">
                     </div>
                     <div class="form-group">
                         <label for="objet">Objet :</label>
-                        <input type="text" class="form-control" id="objet" placeholder="Entrer l'objet" name="objet">
+                        <input type="text" class="form-control" id="objet" placeholder="Entrer l'objet" name="objet" th:field="*{object}">
                     </div>
                     <div class="form-group">
                     <label for="exampleFormControlTextarea3">Votre Message :</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" th:field="*{message}"></textarea>
                     </div>
                     <br>
                     <button type="submit" class="btn-lg btn-block btn btn-primary">Submit</button>

@@ -1,15 +1,16 @@
 package com.ensa.blockchainApp.Controller;
 
+import com.ensa.blockchainApp.Business.Contact;
 import com.ensa.blockchainApp.Business.Person;
+import com.ensa.blockchainApp.Business.ReportedProblem;
 import com.ensa.blockchainApp.Business.User;
 import com.ensa.blockchainApp.Core.Block;
 import com.ensa.blockchainApp.Repositories.BlockRepository;
+import com.ensa.blockchainApp.Repositories.ContactRepo;
+import com.ensa.blockchainApp.Repositories.ReportedProblemRepo;
 import com.ensa.blockchainApp.Repositories.TracabilityRepository;
-import org.apache.tomcat.util.http.parser.Authorization;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -17,8 +18,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 
 @Controller // Spring MVC
@@ -30,6 +29,10 @@ class AppController{
 	TracabilityRepository tracabilityRepository;
 	@Autowired
 	BlockRepository blockRepository;
+	@Autowired
+	ReportedProblemRepo reportedProblemRepo;
+	@Autowired
+	ContactRepo contactRepo;
 
 
 	@RequestMapping( "/")
@@ -86,12 +89,27 @@ class AppController{
 	}
 
 	@GetMapping("/signaler")
-	public String report(){
+
+	public String report(Model model){
+		model.addAttribute ( "ReportedProblem", new ReportedProblem () );
 		return "signaler";
+	}
+	@GetMapping("/ReportedProblems")
+	public String getProblems(Model model){
+		model.addAttribute ( "Problems", reportedProblemRepo.findAllByDateDesc () );
+		return "Problems";
 	}
 
 	@GetMapping("/contact")
-	public String contact(){
+	public String contact(Model model){
+		model.addAttribute ( "contactMessage", new Contact () );
 		return "contact";
 	}
+	@GetMapping("/visitorsMessges")
+	public String getContactMessages(Model model){
+		model.addAttribute ( "contactMessages", contactRepo.findAllByDateDesc () );
+		return "voirContacts";
+	}
+
+
 }
