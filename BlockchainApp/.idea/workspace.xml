@@ -20,23 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc18dc9-adc7-49c9-96ea-853d40c70fdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Repositories/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Repositories/BlockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signaler.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signaler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/signaler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/signaler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Traceability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Traceability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tracabilite.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tracabilite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +144,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@f4d02a" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4f8fa899" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -178,6 +174,9 @@
       <workItem from="1592217998668" duration="8946000" />
       <workItem from="1592260931778" duration="672000" />
       <workItem from="1592332148655" duration="9739000" />
+      <workItem from="1592426035100" duration="3737000" />
+      <workItem from="1592593341322" duration="2147000" />
+      <workItem from="1592754691645" duration="8055000" />
     </task>
     <servers />
   </component>
@@ -219,45 +218,45 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="100" y="123" width="1240" height="630" key="DiffContextDialog/0.23.1440.830@0.23.1440.830" timestamp="1592223310293" />
-    <state width="1493" height="227" key="GridCell.Tab.0.bottom" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.0.bottom" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1493" height="227" key="GridCell.Tab.0.center" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.0.center" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1493" height="227" key="GridCell.Tab.0.left" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.0.left" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1493" height="227" key="GridCell.Tab.0.right" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.0.right" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1493" height="227" key="GridCell.Tab.1.bottom" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.1.bottom" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843518" />
-    <state width="1493" height="227" key="GridCell.Tab.1.center" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.1.center" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1493" height="227" key="GridCell.Tab.1.left" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.1.left" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1493" height="227" key="GridCell.Tab.1.right" timestamp="1592342312998">
+    <state width="1493" height="345" key="GridCell.Tab.1.right" timestamp="1592762786707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1592342312998" />
+    <state width="1493" height="345" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
     <state width="1398" height="271" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
     <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1590412723920">
       <screen x="0" y="0" width="1536" height="864" />
@@ -272,19 +271,19 @@
     </state>
     <state x="610" y="299" width="322" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1589769757275" />
     <state x="572" y="310" width="346" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.830@0.23.1440.830" timestamp="1592227595846" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1592332147639">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1592755028160">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592332147639" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592755028160" />
     <state x="398" y="212" width="670" height="675" key="run.anything.popup" timestamp="1592222037639">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1590400836493" />
     <state x="398" y="212" width="670" height="675" key="run.anything.popup/0.23.1440.830@0.23.1440.830" timestamp="1592222037639" />
-    <state x="404" y="197" width="670" height="652" key="search.everywhere.popup" timestamp="1592219043423">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1592761866590">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1590573019124" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1592761866590" />
     <state x="404" y="197" width="670" height="652" key="search.everywhere.popup/0.23.1440.830@0.23.1440.830" timestamp="1592219043423" />
   </component>
   <component name="XDebuggerManager">
@@ -292,7 +291,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java</url>
-          <line>16</line>
+          <line>17</line>
           <properties field="id" class="com.ensa.blockchainApp.Business.Reclamation" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

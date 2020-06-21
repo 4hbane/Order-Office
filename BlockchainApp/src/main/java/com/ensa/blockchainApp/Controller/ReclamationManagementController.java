@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 
 @Controller
@@ -50,14 +51,34 @@ public class ReclamationManagementController {
 
         Reclamation newReclamation = new Reclamation (this.person, respondent, reclamation.getObject (), file.getBytes(), new Date (  )  );
         if ( blockRepository.count () == 0) {
-            Block newBlock = blockRepository.save ( new Block() );
-            //tracabilityRepository.save ( new Traceability ( newblock.getId (), this.connectedUser, new Date (  )));
+             blockRepository.save ( new Block() );
         }
+
+        if (blockRepository.count () == 1 ){ // Insret la premier en 2019  TEST !
+
+              Calendar c = Calendar.getInstance ();
+              c.add ( Calendar.DATE,-400 );
+              newReclamation.setDate ( c.getTime () );
+              newReclamation.setOrderNumber ( 01+"-"+c.get ( Calendar.YEAR ) );
+              System.out.println (newReclamation.getOrderNumber () + "== 1 ");
+        }
+        else {
+                String[] lastOrderNumberInChainAndItsYear = blockRepository.findById ( blockRepository.count () ).get ().getData ().getOrderNumber ().split ( "-" );
+
+                String lastOrderNumber = lastOrderNumberInChainAndItsYear[0];
+                String itsYear = lastOrderNumberInChainAndItsYear[1];
+
+                if (String.valueOf ( Calendar.getInstance ().get ( Calendar.YEAR ) ).equals ( itsYear )) {
+                    newReclamation.setOrderNumber ( Integer.valueOf ( lastOrderNumber ) + 1 + "-" + itsYear );
+                } else {
+                    newReclamation.setOrderNumber ( 01 + "-" + Calendar.getInstance ().get ( Calendar.YEAR ) );
+                }
+        }
+
 
         Block b = new Block ( newReclamation, blockRepository.findById ( blockRepository.count ()  ).get ().getHash () );
         Block newblock = blockRepository.save ( b );
-        System.out.println (b.getData ());
-        tracabilityRepository.save (new Traceability ( newblock.getId (), this.connectedUser, new Date (  ) ));
+        tracabilityRepository.save (new Traceability ( newblock.getId (), newReclamation.getOrderNumber (), this.connectedUser, new Date (  ) ));
 
         return "redirect:/";
     }

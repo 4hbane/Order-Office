@@ -19,7 +19,7 @@
                 <table class="table">
                     <thead class="thead-light">
                     <tr>
-                        <th scope="col">Id de réclamation</th>
+                        <th scope="col">Numéro d'odre</th>
                         <th scope="col">Ajouté par</th>
                         <th scope="col">Date de l'ajout</th>
                         <th scope="col">Action</th>
@@ -27,7 +27,7 @@
                     </thead>
                     <tbody>
                     <tr th:each="reclamation: ${tracabilites}">
-                        <th th:text="${reclamation.getId()}"></th>
+                        <th th:text="${reclamation.getOrderNumber()}"></th>
                         <td th:text="${reclamation.getUserName()}"></td>
                         <td th:text="${reclamation.getDate()}"></td>
                         <td> <a th:href="@{/reclamation/{id}(id=${reclamation.getId()})}" class="btn btn-info rBtn"> Détail </a></td>

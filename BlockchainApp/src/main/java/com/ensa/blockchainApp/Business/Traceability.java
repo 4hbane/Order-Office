@@ -14,6 +14,8 @@ import java.util.Date;
 public class Traceability {
     @Id
     private Long id;
+    @Column(unique = true)
+    private String orderNumber;
     @NotNull
     private String userName;
     @NotNull

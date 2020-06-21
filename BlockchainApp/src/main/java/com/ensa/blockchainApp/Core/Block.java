@@ -1,7 +1,6 @@
 package com.ensa.blockchainApp.Core;
 
 import com.ensa.blockchainApp.Business.Reclamation;
-import com.ensa.blockchainApp.Repositories.BlockRepository;
 import lombok.Data;
 import org.hibernate.Session;
 
@@ -60,11 +59,11 @@ public class Block {
     }
 
 
-    public static void addGenesisBlockToDatabase() {
+   /* public static void addGenesisBlockToDatabase() {
         BlockRepository blockRepository;
         Block b = new Block();
 
-    }
+    }*/
 
    /* public static void addBlockToDatabase(Session s, String data) {
         Query q = s.createQuery("SELECT hash FROM Block ORDER BY id DESC");

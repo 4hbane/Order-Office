@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Column;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -14,11 +15,12 @@ import java.util.Date;
 
 @Data @ToString @NoArgsConstructor
 public class Reclamation implements Serializable {
-    //@NotNull
-    //private String id;
-
+    @NotNull
+    @Column(unique = true)
+    private String orderNumber;
+    @NotNull
     private Person complainer;
-
+    @NotNull
     private Respondent complainee;
     @NotNull
     private String object;
@@ -27,7 +29,7 @@ public class Reclamation implements Serializable {
     private byte[] reclamation;
 
     @Temporal ( TemporalType.DATE )
-    private Date time;
+    private Date date;
 
     // TODO(): Need to change rec to take bytes.
     public Reclamation(byte[] rec) {
@@ -38,7 +40,7 @@ public class Reclamation implements Serializable {
         this.complainee = complainee;
         this.object = object;
         this.reclamation = reclamation;
-        this.time = new Date();
+        this.date = new Date();
     }
 
 }
