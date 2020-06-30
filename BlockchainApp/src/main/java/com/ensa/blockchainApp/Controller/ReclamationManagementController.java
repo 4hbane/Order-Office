@@ -8,11 +8,12 @@ import com.ensa.blockchainApp.Business.Traceability;
 import com.ensa.blockchainApp.Core.Block;
 import com.ensa.blockchainApp.Repositories.BlockRepository;
 import com.ensa.blockchainApp.Repositories.TracabilityRepository;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.pdf.PdfWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -20,9 +21,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
+
+import static com.ensa.blockchainApp.Business.PDFGeneration.addMetaData;
+import static com.ensa.blockchainApp.Business.PDFGeneration.addTitlePage;
 
 @Controller
 public class ReclamationManagementController {
@@ -47,7 +53,7 @@ public class ReclamationManagementController {
     }
 
     @PostMapping("/saveReclamation")
-    public String addReclamation(@ModelAttribute Respondent respondent, @ModelAttribute Reclamation reclamation, @RequestParam("file") MultipartFile file) throws IOException {
+    public ResponseEntity<ServletOutputStream> addReclamation(@ModelAttribute Respondent respondent, @ModelAttribute Reclamation reclamation, @RequestParam("file") MultipartFile file, HttpServletResponse response) throws IOException {
 
         Reclamation newReclamation = new Reclamation (this.person, respondent, reclamation.getObject (), file.getBytes(), new Date (  )  );
         if ( blockRepository.count () == 0) {
@@ -80,7 +86,7 @@ public class ReclamationManagementController {
         Block newblock = blockRepository.save ( b );
         tracabilityRepository.save (new Traceability ( newblock.getId (), newReclamation.getOrderNumber (), this.connectedUser, new Date (  ) ));
 
-        return "redirect:/";
+        return recOfReclamationFile(newblock,response);
     }
 
     @GetMapping("/reclamation/{id}")
@@ -103,4 +109,25 @@ public class ReclamationManagementController {
                 .body(new ByteArrayResource(file));
     }
 
+
+    @GetMapping("/recu")
+    @ResponseBody
+    public ResponseEntity<ServletOutputStream> recOfReclamationFile(Block addedBlock, HttpServletResponse response) {
+        try {
+            System.out.println ("LOOOOL");
+            Document document = new Document ();
+            response.setContentType("application/pdf");
+            PdfWriter.getInstance(document, response.getOutputStream());
+            document.open ();
+            addMetaData ( document );
+            addTitlePage (addedBlock, document );
+            document.close ();
+            return ResponseEntity.ok ()
+                    .header ( HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + "recu" + ".pdf\"" )
+                    .body ( response.getOutputStream ());
+        } catch ( Exception e ) {
+            e.printStackTrace ();
+        }
+        return ResponseEntity.notFound ().build ();
+    }
 }

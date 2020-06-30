@@ -143,6 +143,7 @@
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.resteasy:resteasy-jaxb-provider:3.9.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.10" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.resteasy:resteasy-client:3.9.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec:1.0.3.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.resteasy:resteasy-jaxrs:3.9.1.Final" level="project" />

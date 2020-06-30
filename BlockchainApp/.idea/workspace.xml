@@ -20,19 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc18dc9-adc7-49c9-96ea-853d40c70fdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e14ee1f0-70ba-453d-ba5f-62e01f9c1b1f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.itextpdf.text.Document@18bcb3c5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.itextpdf.text.Document@577ca6ee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ABDELLAHAHBANE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ABDELLAHAHBANE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Reclamation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Traceability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Business/Traceability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchainApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blockchainApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Controller/ReclamationManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ensa/blockchainApp/Core/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tracabilite.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tracabilite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/voirReclamations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Business/Reclamation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blockchainApp-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blockchainApp-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Controller/ReclamationManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ensa/blockchainApp/Core/Block.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/voirReclamations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.ensa.blockchainApp.BlockchainAppApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.ensa.blockchainApp.BlockchainAppApplicationTests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +80,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1c3ryhKyHolFuYzU78FS8jk37AS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -177,6 +185,8 @@
       <workItem from="1592426035100" duration="3737000" />
       <workItem from="1592593341322" duration="2147000" />
       <workItem from="1592754691645" duration="8055000" />
+      <workItem from="1592847530119" duration="2332000" />
+      <workItem from="1593329579688" duration="6878000" />
     </task>
     <servers />
   </component>
@@ -196,12 +206,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592261156185">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1592261156185" />
     <state x="338" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1592217304699" />
+    <state x="448" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593331779789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="448" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1593331779789" />
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1589769365966">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -218,45 +235,45 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="100" y="123" width="1240" height="630" key="DiffContextDialog/0.23.1440.830@0.23.1440.830" timestamp="1592223310293" />
-    <state width="1493" height="345" key="GridCell.Tab.0.bottom" timestamp="1592762786707">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1593343372949">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1593343372949" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1493" height="345" key="GridCell.Tab.0.center" timestamp="1592762786707">
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1593343372949">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1593343372949" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1493" height="345" key="GridCell.Tab.0.left" timestamp="1592762786707">
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1593343372949">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1593343372949" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843515" />
-    <state width="1493" height="345" key="GridCell.Tab.0.right" timestamp="1592762786707">
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1593343372949">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1593343372949" />
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843516" />
-    <state width="1493" height="345" key="GridCell.Tab.1.bottom" timestamp="1592762786707">
+    <state width="1493" height="185" key="GridCell.Tab.1.bottom" timestamp="1593343372941">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="185" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1593343372941" />
     <state width="1398" height="271" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1592227843518" />
-    <state width="1493" height="345" key="GridCell.Tab.1.center" timestamp="1592762786707">
+    <state width="1493" height="185" key="GridCell.Tab.1.center" timestamp="1593343372941">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="185" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1593343372941" />
     <state width="1398" height="271" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1493" height="345" key="GridCell.Tab.1.left" timestamp="1592762786707">
+    <state width="1493" height="185" key="GridCell.Tab.1.left" timestamp="1593343372941">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="185" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1593343372941" />
     <state width="1398" height="271" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
-    <state width="1493" height="345" key="GridCell.Tab.1.right" timestamp="1592762786707">
+    <state width="1493" height="185" key="GridCell.Tab.1.right" timestamp="1593343372941">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="345" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1592762786707" />
+    <state width="1493" height="185" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1593343372941" />
     <state width="1398" height="271" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1592227843517" />
     <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1590412723920">
       <screen x="0" y="0" width="1536" height="864" />
@@ -271,10 +288,10 @@
     </state>
     <state x="610" y="299" width="322" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1589769757275" />
     <state x="572" y="310" width="346" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.830@0.23.1440.830" timestamp="1592227595846" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1592755028160">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1593329577323">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592755028160" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1593329577323" />
     <state x="398" y="212" width="670" height="675" key="run.anything.popup" timestamp="1592222037639">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
